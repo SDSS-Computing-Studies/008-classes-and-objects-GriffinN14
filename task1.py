@@ -68,9 +68,11 @@ class student:
     def getGrades(self,a,b,c,d,e,f,g):
         grades = [a,b,c,d,e,f,g]
         return grades
+    
     def getCourses(self, courses):
         return courses
-
+    def constuctor(self,a,b,c):
+        pass
 def main():
     # This contains test data that will be used by the autograder.
     # do not modify this function
