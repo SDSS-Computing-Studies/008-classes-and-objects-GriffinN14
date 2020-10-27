@@ -37,9 +37,8 @@ class student:
     def __del__(self):
         pass
 
-    def getGrades(self,a,b,c,d,e,f,g):
-        grades = [a,b,c,d,e,f,g]
-        return grades
+    def getGrades(self,a):
+        self.grades = a
     
     def getCourses(self, courses):
         return courses
@@ -53,7 +52,8 @@ class student:
         pass
     
     def getHonorRoll(self):
-        list.sort(self.getGrades)
+        grades = list(self.grades)
+        grades.sort(grades)
         av = grades[3] + grades[4] + grades[5] + grades[6] + grades[7]
         av = av / 5
         if av >= 86:
@@ -64,7 +64,7 @@ class student:
 
     def average(self):
         av = 0
-        grades = self.getGrades
+        grades = list(self.grades)
         av = grades[1] + grades[2] + grades[3] + grades[4] + grades[5] + grades[6] + grades[7]
         av = av / 7
         return av    
@@ -77,11 +77,11 @@ def main():
 
     st1 = student("Anita Bath","91334",11)
     st1.getCourses( ["English","Math","PE","Computers","History","Biology","Japanese"] )
-    st1.getGrades( 91, 94, 87, 99, 82, 100, 73)
+    st1.getGrades( [91, 94, 87, 99, 82, 100, 73])
 
     st2 = student("Joe Lunchbox","12346", 11)
     st1.getCourses( ["English","Math","Physics","Computers","Geography","Chemistry","French"] )
-    st1.getGrades( 71, 98, 93, 95, 68, 81, 71)
+    st1.getGrades( [71, 98, 93, 95, 68, 81, 71])
 
 
 main()
