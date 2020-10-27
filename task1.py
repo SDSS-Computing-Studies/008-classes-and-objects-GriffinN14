@@ -47,7 +47,7 @@ class student:
         pass
 
     def average(self):
-        grades = getGrades
+        grades = self.getGrades
         for i in range(7):
             av = av + grades[i]
         av = av / 7
@@ -60,10 +60,10 @@ class student:
                 av = av + grades[i]
         av = av / 5
         if av > 86:
-            hr = True
+            h = True
         else:
-            hr = False
-        return hr
+            h = False
+        return h
     
     def getGrades(self,a,b,c,d,e,f,g):
         grades = [a,b,c,d,e,f,g]
