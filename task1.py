@@ -36,7 +36,13 @@ class student:
         self.grade = grade
     def __del__(self):
         pass
-
+    
+    def getGrades(self,a,b,c,d,e,f,g):
+        grades = [a,b,c,d,e,f,g]
+        return grades
+    
+    def getCourses(self, courses):
+        return courses
     def showCourses(self):
         print (self.getCourses)
 
@@ -49,7 +55,7 @@ class student:
     def average(self):
         av = 0
         grades = self.getGrades(self)
-        av = grades(1) + grades(2) + grades(3) + grades(4) + grades(5) + grades(6) + grades(7)
+        av = grades[1] + grades[2] + grades[3] + grades[4] + grades[5] + grades[6] + grades[7]
         av = av / 7
         return av
     
@@ -63,12 +69,7 @@ class student:
             h = False
         return h
     
-    def getGrades(self,a,b,c,d,e,f,g):
-        grades = [a,b,c,d,e,f,g]
-        return grades
     
-    def getCourses(self, courses):
-        return courses
     def constuctor(self,a,b,c):
         pass
 def main():
