@@ -49,18 +49,15 @@ class student:
     def average(self):
         av = 0
         grades = self.getGrades
-        for i in range(7):
-            av = av + grades[i]
+        av = grades[1] + grades[2] + grades[3] + grades[4] + grades[5] + grades[6] + grades[7]
         av = av / 7
         return av
     
     def getHonorRoll(self):
         list.sort(self.getGrades)
-        for i in range(7):
-            if i > 2:
-                av = av + grades[i]
+        av = grades[3] + grades[4] + grades[5] + grades[6] + grades[7]
         av = av / 5
-        if av > 86:
+        if av >= 86:
             h = True
         else:
             h = False
