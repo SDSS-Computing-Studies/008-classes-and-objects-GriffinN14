@@ -49,7 +49,7 @@ class student:
     def average(self):
         av = 0
         grades = self.getGrades
-        av = grades[1] + grades[2] + grades[3] + grades[4] + grades[5] + grades[6] + grades[7]
+        av = grades(1) + grades(2) + grades(3) + grades(4) + grades(5) + grades(6) + grades(7)
         av = av / 7
         return av
     
