@@ -53,7 +53,7 @@ class student:
     
     def getHonorRoll(self):
         grades = list(self.grades)
-        grades.sort(grades)
+        list.sort(grades)
         av = grades[3] + grades[4] + grades[5] + grades[6] + grades[2]
         av = av / 5
         if av >= 86:
