@@ -47,6 +47,7 @@ class student:
         pass
 
     def average(self):
+        av = 0
         grades = self.getGrades
         for i in range(7):
             av = av + grades[i]
